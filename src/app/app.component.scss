@@ -1,0 +1,33 @@
+.block-1{
+	width: 40rem;
+	height: 20rem;
+	background: #bbb;
+	margin: 2rem;
+	float: left;
+	position: relative;
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.block-2{
+	width: 30rem;
+	height: 40rem;
+	background: #bbb;
+	margin: 2rem;
+	float: right;
+	position: relative;
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.block-3{
+	position: relative;
+	float: left;
+	width: 30rem;
+	height: 15rem;
+	margin: 2rem;
+	// background: #bbb;
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+button {
+	margin: 1rem;
+	padding: 0.5rem;
+	width: 10rem;
+	position: relative;
+}
