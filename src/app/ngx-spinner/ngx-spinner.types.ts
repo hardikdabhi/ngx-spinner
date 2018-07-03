@@ -23,7 +23,8 @@ export enum SPINNER_ANIMATIONS {
 	fb_card,
 	plate_rotate,
 	double_bounce,
-	folding_cube
+	folding_cube,
+	bars
 }
 
 export const DEFAULT_CONFIG: ISpinnerConfig = {
