@@ -10,18 +10,19 @@ import { PlateRotateComponent } from './plate-rotate/plate-rotate.component';
 import { DoubleBounceComponent } from './double-bounce/double-bounce.component';
 import { FoldingCubeComponent } from './folding-cube/folding-cube.component';
 import { BarsComponent } from './bars/bars.component';
+import { RotatingDotsComponent } from './rotating-dots/rotating-dots.component';
 
 @NgModule({
   imports: [
     CommonModule
 	],
 	entryComponents: [
-		BlinkComponent, FbCardComponent, PlateRotateComponent, DoubleBounceComponent, FoldingCubeComponent, BarsComponent
+		BlinkComponent, FbCardComponent, PlateRotateComponent, DoubleBounceComponent, FoldingCubeComponent, BarsComponent, RotatingDotsComponent
 	],
 	declarations: [
 		SpinnerAnimationDirective, 
 		NgxSpinner, 
-		BlinkComponent, FbCardComponent, PlateRotateComponent, DoubleBounceComponent, FoldingCubeComponent, BarsComponent 
+		BlinkComponent, FbCardComponent, PlateRotateComponent, DoubleBounceComponent, FoldingCubeComponent, BarsComponent, RotatingDotsComponent 
 	],
 	exports: [ NgxSpinner ],
 	providers: [ NgxSpinnerService ]

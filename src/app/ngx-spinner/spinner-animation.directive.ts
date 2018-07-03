@@ -6,6 +6,7 @@ import { PlateRotateComponent } from './plate-rotate/plate-rotate.component';
 import { DoubleBounceComponent } from './double-bounce/double-bounce.component';
 import { FoldingCubeComponent } from './folding-cube/folding-cube.component';
 import { BarsComponent } from './bars/bars.component';
+import { RotatingDotsComponent } from './rotating-dots/rotating-dots.component';
 
 @Directive({
   selector: '[spinner-animation]'
@@ -33,6 +34,8 @@ export class SpinnerAnimationDirective {
 			componenet = FoldingCubeComponent;
 		} else if(conf.animation==SPINNER_ANIMATIONS.bars) {
 			componenet = BarsComponent;
+		} else if(conf.animation==SPINNER_ANIMATIONS.rotating_dots) {
+			componenet = RotatingDotsComponent;
 		}
 
 		let componentFactory = this.componentFactoryResolver.resolveComponentFactory(componenet);

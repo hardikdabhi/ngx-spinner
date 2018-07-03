@@ -24,7 +24,8 @@ export enum SPINNER_ANIMATIONS {
 	plate_rotate,
 	double_bounce,
 	folding_cube,
-	bars
+	bars,
+	rotating_dots
 }
 
 export const DEFAULT_CONFIG: ISpinnerConfig = {
