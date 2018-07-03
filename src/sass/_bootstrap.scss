@@ -1,0 +1,125 @@
+@import "var";
+//========= bootstrap variables overrides =============
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  6: ($spacer * 4),
+  7: ($spacer * 5),
+  8: ($spacer * 6),
+  9: ($spacer * 8),
+  10: ($spacer * 10),
+);
+
+$h1-font-size: 2.2rem;
+$h2-font-size: 1.6rem;
+$h3-font-size: 1.3rem;
+$h4-font-size: 1.2rem;
+$h5-font-size: 1.1rem;
+
+$navbar-light-color: $gray/1.2;;
+$navbar-light-hover-color: $secondary;
+$navbar-light-active-color: $secondary;
+
+//========= bootstrap imports ==========
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/print";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/jumbotron";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/media";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/utilities";
+
+//========= bootstrap override ==========
+.btn{
+	/* min-width: 10rem;
+  font-size: 1rem; */
+  // font-family: "montserrat";
+  letter-spacing: 0.1rem;
+	&:active, &:focus{
+		outline: 0;
+		box-shadow: none!important;
+	}
+}
+.navbar-nav{
+	flex-direction: row;
+	li{
+		margin: 0 0.5rem;
+		line-height: 2.3rem;
+		a { @include transition; }
+	}
+}
+.navbar-brand{
+  margin-right: 0;
+  padding-top: 0;
+
+  img {
+    width: 10rem;
+  }
+}
+.form-control{
+	@include transition;
+	&:focus{
+		border-color: $primary;
+		box-shadow: 0 0 2px opacify($primary, 0.3);
+	}
+}
+label{
+	margin-bottom: .25rem;
+}
+a {
+	@include transition;
+	&:hover {
+		text-decoration: none;
+	}
+}
+//***** angular form styles *******
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid $secondary; /* green */
+}
+.ng-invalid:not(form)  {
+  border-left: 5px solid $danger; /* red */
+}
+.alert-danger{
+	background-color: #fbf4f4;
+	color: $danger;
+}
+.alert{
+	padding: .25rem 1.25rem;
+}
+.btn-secondary.disabled, .btn-secondary:disabled{
+	background-color: $gray/1.2;
+	border-color: $gray/1.2;
+}

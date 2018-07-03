@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap";
+
+.main-content {
+	min-height: calc(100vh - #{$h-header} - #{$h-footer});
+}
