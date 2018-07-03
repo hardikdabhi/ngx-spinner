@@ -13,8 +13,8 @@ export interface ISpinnerAnimation {
 }
 
 export enum SPINNER_PLACEMENT {
-	block_window = "block-window",
-	block_ui = "block-ui",
+	block_window = "block_window",
+	block_ui = "block_ui",
 	inplace = "inplace"
 }
 
@@ -31,7 +31,7 @@ export const DEFAULT_CONFIG: ISpinnerConfig = {
 	animation: SPINNER_ANIMATIONS.blink,
 	size: "2rem",
 	bgColor: "rgba(255,255,255,0.8)",
-	color: "#333",
-	secondaryColor: "#f00",
-	tertiaryColor: "#00f"
+	color: "#e46521",
+	secondaryColor: "#1574b3",
+	tertiaryColor: "#c31a4f"
 };

@@ -1,5 +1,5 @@
 :host{
-	&.block-window {
+	&.block_window {
 		align-items: center;
 		justify-content: center;
 		position: fixed;
@@ -10,7 +10,7 @@
 		left: 0;
 		z-index: 10002;
 	}
-	&.block-ui {
+	&.block_ui {
 		align-items: center;
 		justify-content: center;
 		position: absolute;
