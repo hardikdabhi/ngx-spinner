@@ -1,0 +1,124 @@
+<div class="container-fluid main-content py-3 px-lg-5 px-xl-10">
+	<div class="card-deck">
+		<div class="card">
+			<div class="card-body">
+				<h5 class="card-title">Config</h5>
+				<h6 class="card-subtitle mb-2 text-muted">Change config and see how they affect spinner</h6>
+				<form>
+					<div class="row">
+						<div class="col-lg">
+							<div class="form-group">
+								<label>Animation</label>	
+								<select [(ngModel)]="config.animation" (change)="createConfigSpinner()" name="animation" class="custom-select">
+									<option *ngFor="let animation of animations; let i=index;" value="{{i}}">{{animation}}</option>
+								</select>
+								<code>config.animation</code>
+							</div>
+						</div>
+						<div class="col-lg">
+							<div class="form-group">
+								<label>Placement</label>	
+								<select [(ngModel)]="config.placement" (change)="createConfigSpinner()" name="placement" class="custom-select">
+									<option *ngFor="let placement of placements;">{{placement}}</option>
+								</select>
+								<code>config.placement</code>
+							</div>
+						</div>
+						<div class="col-lg">
+							<div class="form-group">
+								<label>Size</label>
+								<input [(ngModel)]="config.size" (change)="createConfigSpinner()" name="size" type="text" class="form-control" placeholder="Size in rem, px, etc.">
+								<code>config.size</code>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg">
+							<div class="form-group">
+								<label>Background Color</label>
+								<input (colorPickerChange)="createConfigSpinner()" [value]="config.bgColor" [cpOutputFormat]="'rgba'" [style.background]="config.bgColor" [(colorPicker)]="config.bgColor" class="form-control"/>
+								<code>config.bgColor</code>
+							</div>
+						</div>
+						<div class="col-lg">
+							<div class="form-group">
+								<label>Color</label>
+								<input (colorPickerChange)="createConfigSpinner()" [value]="config.color" [style.background]="config.color" [(colorPicker)]="config.color" class="form-control"/>
+								<code>config.color</code>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg">
+							<div class="form-group">
+								<label>Secondary Color</label>
+								<input (colorPickerChange)="createConfigSpinner()" [value]="config.secondaryColor" [style.background]="config.secondaryColor" [(colorPicker)]="config.secondaryColor" class="form-control"/>
+								<code>config.secondaryColor</code>
+							</div>
+						</div>
+						<div class="col-lg">
+							<div class="form-group">
+								<label>Tirtiary Color</label>
+								<input (colorPickerChange)="createConfigSpinner()" [value]="config.tertiaryColor" [style.background]="config.tertiaryColor" [(colorPicker)]="config.tertiaryColor" class="form-control"/>
+								<code>config.tertiaryColor</code>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="card-footer">
+				<small class="text-muted">Block window type spinner will automatically hide after 3 seconds.</small>
+			</div>
+		</div>
+		<div class="card">
+			<img class="card-img-top" src="/assets/img/4.JPG" alt="">
+			<div class="card-body">
+				<h5 class="card-title">Spinner Demo</h5>
+				<h6 class="card-subtitle mb-2 text-muted">Change config and see spinner in action</h6>
+				<p class="card-text">Spinner below is made with chosen config. These are spinner specific configs, global configs can also be applied to app spinners in application.</p>
+				<p class="text-center"><button class="btn btn-link px-5" [class.position-relative]="config.placement=='inplace'"><ng-container #spConfig></ng-container>Sample Button</button></p>
+			</div>
+		</div>
+	</div>
+	<div class="card-deck mt-3">
+		<div class="card">
+			<img class="card-img-top" src="/assets/img/1.JPG" alt="">
+			<div class="card-body">
+				<h5 class="card-title">Block UI</h5>
+				<h6 class="card-subtitle mb-2 text-muted">Example of Placement: block-ui</h6>
+				<p class="card-text">Spinner is shown on this entire section and blocks card.</p>
+				<p class="text-center"><button type="button" class="btn btn-light" (click)="spBlockUi.toggle()">Show</button></p>
+			</div>
+			<div class="card-footer">
+				<small class="text-muted">Place: Praslin</small>
+			</div>
+			<ngx-spinner #spBlockUi [config]="spBlockUiConfig"></ngx-spinner>
+		</div>
+		<div class="card">
+			<img class="card-img-top" src="/assets/img/2.JPG" alt="">
+			<div class="card-body">
+				<h5 class="card-title">Inplace</h5>
+				<h6 class="card-subtitle mb-2 text-muted">Example of Placement: inplace</h6>
+				<p class="card-text">Spinners will be shown "in-place", i.e. in button and in footer in this example. Inplace spinner does not block anything, any control needs to be blocked manually.</p>
+				<p class="text-center"><button type="button" (click)="spInplace=!spInplace" class="btn btn-light position-relative"><!-- <ngx-spinner [visible]="spInplace" [config]="spInplaceConfig"></ngx-spinner> -->Toggle</button></p>
+			</div>
+			<div class="card-footer">
+				<small class="text-muted">Place: St. Petersburg</small>
+				<span class="ml-2 position-relative"><ngx-spinner [visible]="spInplace" [config]="spInplaceConfig"></ngx-spinner></span>
+			</div>
+		</div>
+		<div class="card">
+			<img class="card-img-top" src="/assets/img/3.JPG" alt="">
+			<div class="card-body">
+				<h5 class="card-title">Block Everything</h5>
+				<h6 class="card-subtitle mb-2 text-muted">Example of Placement: block-window</h6>
+				<p class="card-text">This shows a spinner with mask on entire window, blocking everything. A classic way of showing a loading spinner mask. Give it a try!</p>
+				<p class="text-center"><button type="button" (click)="blockWindow()" class="btn btn-light">Show</button></p>
+			</div>
+			<div class="card-footer">
+				<small class="text-muted">Place: Smoky Mountains</small>
+			</div>
+			<ngx-spinner #spBlockWindow></ngx-spinner>
+		</div>
+	</div>
+</div>
