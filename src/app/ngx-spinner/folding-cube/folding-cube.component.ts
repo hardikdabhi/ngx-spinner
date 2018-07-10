@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { ISpinnerAnimation, ISpinnerConfig } from '../ngx-spinner.types';
 
 @Component({
@@ -7,11 +7,12 @@ import { ISpinnerAnimation, ISpinnerConfig } from '../ngx-spinner.types';
   styleUrls: ['./folding-cube.component.scss']
 })
 export class FoldingCubeComponent implements ISpinnerAnimation {
-
+	@ViewChild("styles") styles: ElementRef;
 	config: ISpinnerConfig;
   constructor() { }
 
   ngOnInit() {
+		this.styles.nativeElement.innerHTML = `<style>.sk-folding-cube .sk-cube:before { background-color: ${this.config.color} }</style>`;
   }
 
 }
