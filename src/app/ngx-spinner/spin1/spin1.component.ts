@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { ISpinnerAnimation } from 'dist/public_api';
+import { ISpinnerAnimation } from '../ngx-spinner.types';
 
 @Component({
   selector: 'app-spin1',
