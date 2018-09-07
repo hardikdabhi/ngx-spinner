@@ -1,4 +1,4 @@
-# @hardikdabhi/ngx-spinner
+# @hardpool/ngx-spinner
 ![Example GIF](https://img.shields.io/badge/support-angular%206.x-brightgreen.svg)  ![Example GIF](https://img.shields.io/badge/support-angular%205.x-brightgreen.svg)
 
 Customizable loading spinner for Angular (version ng 5 and above). Supports multiple instances of spinners with different configurations. Can mask element, portion of UI or complete window.
@@ -7,7 +7,7 @@ Customizable loading spinner for Angular (version ng 5 and above). Supports mult
 [Click here to see it in action!](https://hardikdabhi.github.io/ngx-spinner/)
 
 ## Installation
-`npm i @hardikdabhi/ngx-spinner`
+`npm i @hardpool/ngx-spinner`
 
 ## Usage
 Import `NgxSpinnerModule` in your module.
@@ -15,7 +15,7 @@ Import `NgxSpinnerModule` in your module.
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { NgxSpinnerModule } from '@hardikdabhi/ngx-spinner';
+import { NgxSpinnerModule } from '@hardpool/ngx-spinner';
 
 @NgModule({
   // ...
@@ -37,7 +37,7 @@ component.html
 Control spinner instance using [input parameters](#input-parameters).
 component.ts
 ``` typescript
-import { SPINNER_ANIMATIONS, SPINNER_PLACEMENT, ISpinnerConfig } from '@hardikdabhi/ngx-spinner';
+import { SPINNER_ANIMATIONS, SPINNER_PLACEMENT, ISpinnerConfig } from '@hardpool/ngx-spinner';
 
 @Component({
   // ...
@@ -124,7 +124,7 @@ component.html
 ```
 component.ts
 ``` typescript
-import { NgxSpinner } from '@hardikdabhi/ngx-spinner';
+import { NgxSpinner } from '@hardpool/ngx-spinner';
 
 @Component({
   // ...

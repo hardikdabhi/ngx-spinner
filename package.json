@@ -1,7 +1,7 @@
 {
-  "name": "@hardikdabhi/ngx-spinner",
+  "name": "@hardpool/ngx-spinner",
   "description": "Customizable loading spinner for Angular (version ng 5 and above)",
-  "version": "2.1.2",
+  "version": "2.2.1",
   "bugs": "https://github.com/hardikdabhi/ngx-spinner/issues",
   "scripts": {
     "build-demo": "ng build --prod --output-path docs --base-href /ngx-spinner/",
