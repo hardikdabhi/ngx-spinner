@@ -18,6 +18,7 @@ export class DemoComponent implements OnInit {
 	config: ISpinnerConfig = DEFAULT_CONFIG;
 	spBlockUiConfig: ISpinnerConfig;
 	spInplaceConfig: ISpinnerConfig;
+	spInplace: boolean;
 
   constructor(private viewContainerRef: ViewContainerRef, private componentFactoryResolver: ComponentFactoryResolver) { }
 
