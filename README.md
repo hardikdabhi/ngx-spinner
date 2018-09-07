@@ -71,14 +71,14 @@ export class DemoComponent implements OnInit {
 ## Input Parameters
 Below are the inputs for `ngx-spinner`.
 Input | Required | Type | Details
---- |:---:|:---:| ---
+--- | :---: | :---: | ---
 visible | Optional | boolean | `true` to show spinner, `false` to hide spinner
 config | Optional | ISpinnerConfig | Spinner configuration object, see [options](#config-options)
 
 ## Config Options
 Below are the configuration options for spinner, type `ISpinnerConfig`. Config options can be set globally or can be set for each `ngx-spinner` instance.
 Option | Type | Default | Details
---- |:---:|:---:| ---
+--- | :---: | :---: | ---
 placement | enum | SPINNER_PLACEMENT.inplace | Controls placement for spinner instance.<br>`SPINNER_PLACEMENT.inplace`: shows spinner on element, not blocking anything<br>`SPINNER_PLACEMENT.block_ui`: shows spinner blocking parent element. Parent element must explicitely specify `position: relative` css.<br>`block_window`: shows spinner on window with mask, blocking entire app.
 animation | enum | SPINNER_ANIMATIONS.blink | Controls animation for spinner instance. Can be set anything like `SPINNER_ANIMATIONS.xxxxxxx`
 size | string | `2rem` | Controls size of spinner. Can be specified in any css friendly value, eg. `18px`, `4rem`, `3.2em` etc.
