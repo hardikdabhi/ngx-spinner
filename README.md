@@ -1,13 +1,17 @@
 # @hardikdabhi/ngx-spinner
 ![Example GIF](https://img.shields.io/badge/support-angular%206.x-brightgreen.svg)  ![Example GIF](https://img.shields.io/badge/support-angular%205.x-brightgreen.svg)
+
 Customizable loading spinner for Angular (version ng 5 and above). Supports multiple instances of spinners with different configurations. Can mask element, portion of UI or complete window.
+
+## Demo
+[Click here to see it in action!](http://www.hardikdabhi.com/projects/bluroverlay.js/demo/)
 
 ## Installation
 `npm i @hardikdabhi/ngx-spinner`
 
 ## Usage
 Import `NgxSpinnerModule` in your module.
-```
+``` typescript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -25,14 +29,14 @@ export class AppModule { }
 ```
 Add tag `ngx-spinner` in your component to create a spinner instance.
 component.html
-```
+``` html
 <ngx-spinner [visible]="showSpinner" [config]="spinnerConfig"></ngx-spinner>
 <button (click)="showSpinner()">Show Spinner</button>
 <button (click)="hideSpinner()">Hide Spinner</button>
 ```
 Control spinner instance using [input parameters](#input-parameters).
 component.ts
-```
+``` typescript
 import { SPINNER_ANIMATIONS, SPINNER_PLACEMENT, ISpinnerConfig } from '@hardikdabhi/ngx-spinner';
 
 @Component({
@@ -84,7 +88,7 @@ secondaryColor | string | `#1574b3` | Controls secondary color for spinner. Can 
 
 ### Global Config
 Global config affects all spinners in app. These config overrides default configs and are overriden by instance configs. To set global config use `config` method while including `NgxSpinnerModule`.
-```
+``` typescript
 @NgModule({
   // ...
   imports: [
@@ -112,11 +116,11 @@ Method | Details
 ## Optional: Usage (example with componentRef)
 Below is alternate way of using spinner with [API](#api). 
 component.html
-```
+``` html
 <ngx-spinner #loginSpinner></ngx-spinner>
 ```
 component.ts
-```
+``` typescript
 import { NgxSpinner } from '@hardikdabhi/ngx-spinner';
 
 @Component({
