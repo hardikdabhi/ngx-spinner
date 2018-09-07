@@ -4,7 +4,7 @@
 Customizable loading spinner for Angular (version ng 5 and above). Supports multiple instances of spinners with different configurations. Can mask element, portion of UI or complete window.
 
 ## Demo
-[Click here to see it in action!](http://www.hardikdabhi.com/projects/bluroverlay.js/demo/)
+[Click here to see it in action!](https://hardikdabhi.github.io/ngx-spinner/)
 
 ## Installation
 `npm i @hardikdabhi/ngx-spinner`
@@ -70,21 +70,21 @@ export class DemoComponent implements OnInit {
 
 ## Input Parameters
 Below are the inputs for `ngx-spinner`.
-Input | Required | Type | Details
---- | --- | --- | ---
-visible | Optional | boolean | `true` to show spinner, `false` to hide spinner
-config | Optional | ISpinnerConfig | Spinner configuration object, see [options](#config-options)
+| Input | Required | Type | Details |
+| --- | --- | --- | --- |
+| visible | Optional | boolean | `true` to show spinner, `false` to hide spinner |
+| config | Optional | ISpinnerConfig | Spinner configuration object, see [options](#config-options) |
 
 ## Config Options
 Below are the configuration options for spinner, type `ISpinnerConfig`. Config options can be set globally or can be set for each `ngx-spinner` instance.
-Option | Type | Default | Details
---- | --- | --- | ---
-placement | enum | SPINNER_PLACEMENT.inplace | Controls placement for spinner instance.<br>`SPINNER_PLACEMENT.inplace`: shows spinner on element, not blocking anything<br>`SPINNER_PLACEMENT.block_ui`: shows spinner blocking parent element. Parent element must explicitely specify `position: relative` css.<br>`block_window`: shows spinner on window with mask, blocking entire app.
-animation | enum | SPINNER_ANIMATIONS.blink | Controls animation for spinner instance. Can be set anything like `SPINNER_ANIMATIONS.xxxxxxx`
-size | string | `2rem` | Controls size of spinner. Can be specified in any css friendly value, eg. `18px`, `4rem`, `3.2em` etc.
-bgColor | string | `rgba(255,255,255,0.8)` | Controls background mask color for spinner instance. Can be any css color hex, rgb(a) value etc. eg. `#eaeaea`, `rgba(0,0,0,0.8)` etc.
-color | string | `#e46521` | Controls color of spinner. Can be any css color hex, rgb(a) value.
-secondaryColor | string | `#1574b3` | Controls secondary color for spinner. Can be any valid css color.
+| Option | Type | Default | Details |
+| --- | --- | --- | --- |
+| placement | enum | SPINNER_PLACEMENT.inplace | Controls placement for spinner instance.<br>`SPINNER_PLACEMENT.inplace`: shows spinner on element, not blocking anything<br>`SPINNER_PLACEMENT.block_ui`: shows spinner blocking parent element. Parent element must explicitely specify `position: relative` css.<br>`block_window`: shows spinner on window with mask, blocking entire app. |
+| animation | enum | SPINNER_ANIMATIONS.blink | Controls animation for spinner instance. Can be set anything like `SPINNER_ANIMATIONS.xxxxxxx` |
+| size | string | `2rem` | Controls size of spinner. Can be specified in any css friendly value, eg. `18px`, `4rem`, `3.2em` etc. |
+| bgColor | string | `rgba(255,255,255,0.8)` | Controls background mask color for spinner instance. Can be any css color hex, rgb(a) value etc. eg. `#eaeaea`, `rgba(0,0,0,0.8)` etc. |
+| color | string | `#e46521` | Controls color of spinner. Can be any css color hex, rgb(a) value. |
+| secondaryColor | string | `#1574b3` | Controls secondary color for spinner. Can be any valid css color. |
 
 ### Global Config
 Global config affects all spinners in app. These config overrides default configs and are overriden by instance configs. To set global config use `config` method while including `NgxSpinnerModule`.
@@ -108,10 +108,10 @@ Instance config affects only the spinner instance. These config ovverrides globa
 ## API
 Below are the methods exposed by `NgxSpinner`.
 Method | Details
---- | ---
-`show()` | Shows spinner instance
-`hide()` | Hides spinner instance
-`toggle()` | Alters the display state of spinner instance
+| --- | --- |
+| `show()` | Shows spinner instance |
+| `hide()` | Hides spinner instance |
+| `toggle()` | Alters the display state of spinner instance |
 
 ## Optional: Usage (example with componentRef)
 Below is alternate way of using spinner with [API](#api). 
