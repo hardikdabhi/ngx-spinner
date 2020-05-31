@@ -1,7 +1,7 @@
 ---
 layout: project
 title: home
-permalink: /
+permalink: /home
 banner:
   title: "Customizable loading spinner for Angular"
   description: "Supports animation of choice and multiple instances of spinners with different configurations on same page. Can mask element, portion of UI or complete window."
