@@ -102,5 +102,8 @@
       }
     }
   },
-  "defaultProject": "ngx-spinner-ht"
+  "defaultProject": "ngx-spinner-ht",
+  "cli": {
+    "analytics": false
+  }
 }

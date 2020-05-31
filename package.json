@@ -4,7 +4,7 @@
   "version": "2.2.1",
   "bugs": "https://github.com/hardikdabhi/ngx-spinner/issues",
   "scripts": {
-    "build-demo": "ng build --prod --output-path docs/demo --base-href /ngx-spinner/",
+    "build-demo": "ng build --prod --output-path docs/demo --base-href /ngx-spinner/demo/",
     "package": "ng-packagr -p ng-package.json"
   },
   "ngPackage": {
@@ -41,5 +41,21 @@
     "@angular/core": ">=5.0.0",
     "@angular/common": ">=5.0.0"
   },
-  "keywords": ["angular","angular5","angular6","angular 5","angular 6","load","spinner","loading","spin","busy","wait","ngx-spinner","progress","angular loading mask","angular loading amination"]
+  "keywords": [
+    "angular",
+    "angular5",
+    "angular6",
+    "angular 5",
+    "angular 6",
+    "load",
+    "spinner",
+    "loading",
+    "spin",
+    "busy",
+    "wait",
+    "ngx-spinner",
+    "progress",
+    "angular loading mask",
+    "angular loading amination"
+  ]
 }
