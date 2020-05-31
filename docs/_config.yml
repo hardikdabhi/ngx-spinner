@@ -1,0 +1,56 @@
+remote_theme: hardpool/hardpool-flat
+
+# Site Settings
+title                     : "@hardpool/ngx-spinner"
+title_separator           : "|"
+favicon                   : /test/assets/fav.ico
+csstheme                  : "project"
+
+# Site SEO
+seo:
+  gtmid: GTM-M3MXT24
+
+# Site Header
+main_logo                 : ""
+name                      : "@hardpool/ngx-spinner"
+description               : "Hardpool Jekyll simple flat theme."
+header:
+  links:
+    - label: ""
+      icon: "fab fa-github fa-2x"
+      url: https://www.instagram.com/hardikdabhi22/
+
+# Site Footer
+copyright: "Team Hardpool"
+footer:
+  insta_at: 2321794898.c625d4b.52d85f33c6074769a1052765b092bc06
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter"
+      # url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-f"
+      # url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      # url:
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      # url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: https://www.instagram.com/hardikdabhi22/
+
+# Sass/SCSS
+sass:
+  style: compressed
+
+# Reading Files
+include:
+  - _pages
+
+# config
+permalink: /:title

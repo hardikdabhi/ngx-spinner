@@ -1,10 +1,12 @@
-# @hardpool/ngx-spinner
+---
+layout: project
+title: home
+permalink: /
+banner:
+  title: "Customizable loading spinner for Angular"
+  description: "Supports animation of choice and multiple instances of spinners with different configurations on same page. Can mask element, portion of UI or complete window."
+---
 ![Example GIF](https://img.shields.io/badge/support-angular%206.x-brightgreen.svg)  ![Example GIF](https://img.shields.io/badge/support-angular%205.x-brightgreen.svg)
-
-Customizable loading spinner for Angular (version ng 5 and above). Supports multiple instances of spinners with different configurations. Can mask element, portion of UI or complete window.
-
-## Demo
-[Click here to see it in action!](https://hardikdabhi.github.io/ngx-spinner/)
 
 ## Installation
 `npm i @hardpool/ngx-spinner`
