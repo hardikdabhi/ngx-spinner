@@ -37,3 +37,8 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# docs
+docs/_site
+docs/.jekyll-cache
+docs/gemfile
