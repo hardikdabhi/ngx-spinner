@@ -4,7 +4,7 @@
   "version": "2.2.1",
   "bugs": "https://github.com/hardikdabhi/ngx-spinner/issues",
   "scripts": {
-    "build-demo": "ng build --prod --output-path docs/demo --base-href /ngx-spinner/demo/",
+    "build-demo": "ng build --prod --output-path docs/demo --base-href /demo/",
     "package": "ng-packagr -p ng-package.json"
   },
   "ngPackage": {
