@@ -41,6 +41,7 @@ Thumbs.db
 # docs
 docs/_site
 docs/.jekyll-cache
-docs/gemfile
+docs/Gemfile
+docs/Gemfile.lock
 
 package-lock.json

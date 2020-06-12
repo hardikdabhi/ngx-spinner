@@ -5,6 +5,7 @@ title                     : "@hardpool/ngx-spinner"
 title_separator           : "|"
 favicon                   : /test/assets/fav.ico
 csstheme                  : "project"
+scss                      : "colors"
 
 # Site SEO
 seo:
@@ -40,6 +41,7 @@ footer:
 # Sass/SCSS
 sass:
   style: compressed
+  sass_dir: sass
 
 # Reading Files
 include:
